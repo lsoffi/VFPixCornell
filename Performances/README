@@ -1,0 +1,10 @@
+#Performance analysis tool
+This tool read as input the root file obtained from the TrkAnalyzer producer
+To ge the exe file run:
+1) In main.cc one can write the name of the input root file to be read
+2) AnalysisNew.cc is the class where we loop over the events and we do the analysis.
+   Here we match vbf quarks to trk jets, compute efficiencies etc etc
+3)  make-> to compile the tool
+4) ./tmp/AnalysisNew "VBF" or "GGH" depending on the input file to run the analysis.
+5) in makeplot.C there are some basic function to be used to produce nice plots.
+
